@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="file2.css">
+  <title>To-Do List</title>
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+    <div class="priority">
+      <label>
+        <input type="radio" name="priority" value="top" class="priority1"> Top Priority
+      </label>
+      <label>
+        <input type="radio" name="priority" value="medium" class="priority2"> Medium Priority
+      </label>
+      <label>
+        <input type="radio" name="priority" value="low" class="priority3"> Low Priority
+      </label>
+    </div>
+    <textarea id="taskInput" placeholder="Enter your task here"></textarea>
+    <input type="date" id="deadlineInput" placeholder="Select a deadline">
+    <input type="text" id="labelInput" placeholder="Enter labels (comma-separated)">
+    <button id="addTaskBtn">Add Task</button>
+    <div id="progressBar">
+      <div id="progressIndicator"></div>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="file3.js"></script>
+</body>
+</html>
